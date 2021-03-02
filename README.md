@@ -6,7 +6,7 @@ This repository is a tool to determine if GitHub, written in python3, is keeping
 
 SOTorrent の情報あるいは今回用いたスクリプトを解読して変更履歴を追う
 
-# dev memo
+# dev command memo
 
 これを使うと文字を含むコミットを表示することができる
 
@@ -20,6 +20,19 @@ git log -S  "python"
 commit cc5ededfcf56d1be1db5fc030056c8896771be3d
 Author: takumidev86 <takumidevelopment86@gmail.com>
 Date:   Wed Mar 3 01:52:56 2021 +0900
+```
+
+[git log のフォーマットを指定する - Qiita](https://qiita.com/harukasan/items/9149542584385e8dea75)
+
+```bash
+#色々オプションをつけてコミット情報を出力
+~/w/tracking_evolution_GH_SO ❯❯❯ git log --pretty=format:"[%ad] %h %an %cd"
+[Wed Mar 3 02:16:05 2021 +0900] 0fc51f4 takumidev86 Wed Mar 3 02:16:05 2021 +0900
+[Wed Mar 3 01:52:56 2021 +0900] cc5eded takumidev86 Wed Mar 3 01:52:56 2021 +0900
+
+#文字列を含む(-S) コミット時間を出力
+~/w/tracking_evolution_GH_SO ❯❯❯ git log -S  "python" --pretty=format:" %cd"
+ Wed Mar 3 01:52:56 2021 +0900
 ```
 
 # 設計
