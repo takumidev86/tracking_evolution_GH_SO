@@ -33,6 +33,19 @@ Date:   Wed Mar 3 01:52:56 2021 +0900
 #文字列を含む(-S) コミット時間を出力
 ~/w/tracking_evolution_GH_SO ❯❯❯ git log -S  "python" --pretty=format:" %cd"
  Wed Mar 3 01:52:56 2021 +0900
+
+# stackoverflow.comが含まれるコミットを検索
+~/w/G/j2objc-gradle ❯❯❯ git log -S  "stackoverflow.com" --pretty=format:"[%ad] %h %an %cd"
+[Sat Jan 9 17:14:55 2016 -0800] 4a1f876 Bruno Bowden Tue Jan 12 00:20:49 2016 -0800
+[Sat Oct 24 17:36:58 2015 -0700] 0da1235 Bruno Bowden Sat Oct 24 17:44:27 2015 -0700
+[Wed Oct 21 15:19:08 2015 -0700] e33e86e Bruno Bowden Thu Oct 22 17:42:17 2015 -0700
+[Tue Aug 25 16:31:06 2015 -0700] a3cb3e2 Bruno Bowden Wed Aug 26 02:41:59 2015 -0700
+[Sun Aug 23 18:01:46 2015 -0700] 0593019 Bruno Bowden Sun Aug 23 22:19:15 2015 -0700
+[Mon Jun 29 11:28:09 2015 -0700] cc47a2b Bruno Bowden Tue Jul 14 07:25:41 2015 -0700
+[Tue Jun 2 16:41:41 2015 -0700] 5aa63ff Bruno Bowden Tue Jun 2 17:54:06 2015 -0700
+[Wed Apr 22 23:35:31 2015 -0700] 321e5ae Bruno Bowden Wed Apr 22 23:35:31 2015 -0700
+[Mon Apr 13 12:12:49 2015 -0700] 347dbc3 Bruno Bowden Mon Apr 13 12:12:49 2015 -0700
+[Fri Apr 10 15:17:40 2015 +0200] bed7005 Confile Fri Apr 10 15:17:40 2015 +0200
 ```
 
 # 設計
