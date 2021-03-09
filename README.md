@@ -46,6 +46,16 @@ Date:   Wed Mar 3 01:52:56 2021 +0900
 [Wed Apr 22 23:35:31 2015 -0700] 321e5ae Bruno Bowden Wed Apr 22 23:35:31 2015 -0700
 [Mon Apr 13 12:12:49 2015 -0700] 347dbc3 Bruno Bowden Mon Apr 13 12:12:49 2015 -0700
 [Fri Apr 10 15:17:40 2015 +0200] bed7005 Confile Fri Apr 10 15:17:40 2015 +0200
+
+# stackoverflowのリンクを直接検索
+~/w/G/WordPress-Android ❯❯❯ git log -S  "http://stackoverflow.com/a/1612015/1673548" --pretty=format:"[%ad] %h %an %cd"                                                                                                      ✘ 130 
+lines 1--1...skipping...
+[Wed May 27 18:34:41 2015 -0400] d5a8f7ebd Nick Bradbury Wed 
+[Wed May 27 18:34:41 2015 -0400] d5a8f7ebd Nick Bradbury Wed 
+~
+~
+~
+~
 ```
 
 # 設計
